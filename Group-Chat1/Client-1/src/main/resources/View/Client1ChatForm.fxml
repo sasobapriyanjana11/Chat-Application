@@ -35,11 +35,6 @@
       </ScrollPane>
       <TextField fx:id="sendTxtAreaClient" layoutX="255.0" layoutY="471.0" onAction="#txtFieldClientOnAction" prefHeight="38.0" prefWidth="280.0" promptText="  message" />
       <Button fx:id="btnSendClient" layoutX="548.0" layoutY="470.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="38.0" prefWidth="62.0" style="-fx-background-color: green;" textFill="#ece3e3" />
-      <ImageView layoutX="566.0" layoutY="476.0">
-         <image>
-            <Image url="@icons/icons8-send-26.png" />
-         </image>
-      </ImageView>
       <ScrollPane fx:id="spaneForFlowPane" layoutX="17.0" layoutY="204.0" prefHeight="250.0" prefWidth="200.0">
          <content>
             <FlowPane fx:id="emojiContainer" prefHeight="156.0" prefWidth="200.0" style="-fx-background-color: white;">
@@ -53,6 +48,11 @@
       <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="255.0" layoutY="35.0">
          <image>
             <Image url="@icons/icons8-glyph-96.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="566.0" layoutY="476.0">
+         <image>
+            <Image url="@icons/icons8-send-26.png" />
          </image>
       </ImageView>
    </children>
