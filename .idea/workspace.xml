@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc956d8-5222-4ebd-874e-fc2dc2381401" name="Changes" comment="created client2 chat application" />
+    <list default="true" id="acc956d8-5222-4ebd-874e-fc2dc2381401" name="Changes" comment="created client2 chat application">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group-Chat1/Client-1/src/main/java/lk/ijse/Client1FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group-Chat1/Client-1/src/main/java/lk/ijse/Client1FormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/java/lk/ijse/Client2FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/java/lk/ijse/Client2FormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/Client2ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/Client2ChatForm.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/home/sasoba/IdeaProjects/Chat-Application/Group-Chat1/Client-2/src/main/resources/View/icons",
-    "onboarding.tips.debug.path": "/home/sasoba/IdeaProjects/Chat-Application/Group-Chat1/Client-2/src/main/java/lk/ijse/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sasoba/IdeaProjects/Chat-Application/Group-Chat1/Client-2/src/main/resources/View/icons&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/sasoba/IdeaProjects/Chat-Application/Group-Chat1/Client-2/src/main/java/lk/ijse/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/icons" />
@@ -54,7 +61,7 @@
       <recent name="$PROJECT_DIR$/Group-Chat1/src/main/resources/icons" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client2_InitializerWrapper">
+  <component name="RunManager" selected="Application.Client1_InitializerWrapper">
     <configuration name="Client1_InitializerWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.Client1_InitializerWrapper" />
       <module name="Client-1" />
@@ -81,9 +88,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Initializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lk.ijse.Initializer" />
-      <module name="Group-Chat1" />
+    <configuration name="Client3_InitializerWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.Client3_InitializerWrapper" />
+      <module name="Client3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lk.ijse.*" />
@@ -122,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client2_InitializerWrapper" />
         <item itemvalue="Application.Client1_InitializerWrapper" />
+        <item itemvalue="Application.Client2_InitializerWrapper" />
         <item itemvalue="Application.ServerWrapper" />
+        <item itemvalue="Application.Client3_InitializerWrapper" />
         <item itemvalue="Application.InitializerWrapper" />
-        <item itemvalue="Application.Initializer" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +172,17 @@
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created client1 chat application" />

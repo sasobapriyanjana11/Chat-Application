@@ -68,7 +68,7 @@ public class Client2FormController implements Initializable {
     private DataInputStream din;
     private DataOutputStream dout;
     static String user_name;
-    public static Image image;
+    public static Image image; //706233
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -134,7 +134,7 @@ public class Client2FormController implements Initializable {
                                 Platform.runLater(()->{
                                     HBox hBox = new HBox();
                                     hBox.setPadding(new Insets(5,15,5,15));
-                                    hBox.setStyle("-fx-background-color: #039dfc; -fx-text-fill: #ffff;-fx-background-radius: 14");
+                                    hBox.setStyle("-fx-background-color:blue; -fx-text-fill: #ffff;-fx-background-radius: 14");
                                     hBox.setAlignment(Pos.BASELINE_LEFT);
                                     Label label = new Label(massage);
                                     label.setTextFill(Color.WHITE);
@@ -152,6 +152,7 @@ public class Client2FormController implements Initializable {
                             }
                         }
                     }
+
                 } catch (IOException e) {
                     System.out.println(e);
                 }
@@ -227,7 +228,34 @@ public class Client2FormController implements Initializable {
 
     private void displayFoodEmojis() {
 
+            emojiContainer.getChildren().clear();
+
+            String[] emojis = {
+                    "\uD83C\uDF54", "\uD83C\uDF55", "\uD83C\uDF63", "\uD83C\uDF57", "\uD83C\uDF2E",
+                    "\uD83C\uDF2F", "\uD83C\uDF2D", "\uD83C\uDF5D", "\uD83C\uDF68", "\uD83C\uDF69",
+                    "\uD83C\uDF6A", "\uD83C\uDF6B", "\uD83C\uDF7F", "\u2615", "\uD83C\uDF75"
+            };
+
+        addEmojisToContainer(emojis);
+
+        }
+
+
+    private void addEmojisToContainer(String[] emojis) {
+        for (String emoji : emojis) {
+            Label emojiLabel = new Label();
+            emojiLabel.setText(emoji);
+            emojiLabel.setStyle("-fx-font-size: 30");
+            emojiLabel.setOnMouseClicked(event -> {
+                String unicode = emoji;
+                sendTxtAreaClient.appendText(unicode);
+                sendTxtAreaClient.requestFocus();
+                sendTxtAreaClient.positionCaret(sendTxtAreaClient.getText().length());
+            });
+            emojiContainer.getChildren().add(emojiLabel);
+        }
     }
+
 
     private void displayAnimalEmojis() {
         emojiContainer.getChildren().clear();
@@ -252,18 +280,7 @@ public class Client2FormController implements Initializable {
                 "\uD83D\uDC7C", "\uD83D\uDC7D", "\uD83D\uDC7E", "\uD83D\uDC7F"
         };
 
-        for (String emoji : emojis) {
-            Label emojiLabel = new Label();
-            emojiLabel.setText(emoji);
-            emojiLabel.setStyle("-fx-font-size: 30");
-            emojiLabel.setOnMouseClicked(event -> {
-                String unicode = emoji;
-                sendTxtAreaClient.appendText(unicode);
-                sendTxtAreaClient.requestFocus();
-                sendTxtAreaClient.positionCaret(sendTxtAreaClient.getText().length());
-            });
-            emojiContainer.getChildren().add(emojiLabel);
-        }
+        addEmojisToContainer(emojis);
     }
 
     private void changeColorOfEmojiCategories() {
@@ -298,18 +315,8 @@ public class Client2FormController implements Initializable {
                 "\uD83D\uDE4F",
         };
 
-        for (String emoji : emojis) {
-            Label emojiLabel = new Label();
-            emojiLabel.setText(emoji);
-            emojiLabel.setStyle("-fx-font-size: 30");
-            emojiLabel.setOnMouseClicked(event -> {
-                String unicode = emoji;
-                sendTxtAreaClient.appendText(unicode);
-                sendTxtAreaClient.requestFocus();
-                sendTxtAreaClient.positionCaret(sendTxtAreaClient.getText().length());
-            });
-            emojiContainer.getChildren().add(emojiLabel);
-        }
+
+        addEmojisToContainer(emojis);
     }
 
     @FXML

@@ -226,7 +226,31 @@ public class Client1FormController implements Initializable {
     }
 
     private void displayFoodEmojis() {
+        emojiContainer.getChildren().clear();
 
+        String[] emojis = {
+                "\uD83E\uDD66", "\uD83E\uDD55", "\uD83E\uDE91", 
+                "\uD83E\uDD52", "\uD83C\uDF45", "\uD83C\uDF46",
+                "\uD83E\uDD54", "\uD83C\uDF44", "\uD83E\uDD6C" 
+        };
+
+        addEmojisToContainer(emojis);
+
+    }
+
+    private void addEmojisToContainer(String[] emojis) {
+        for (String emoji : emojis) {
+            Label emojiLabel = new Label();
+            emojiLabel.setText(emoji);
+            emojiLabel.setStyle("-fx-font-size: 30");
+            emojiLabel.setOnMouseClicked(event -> {
+                String unicode = emoji;
+                sendTxtAreaClient.appendText(unicode);
+                sendTxtAreaClient.requestFocus();
+                sendTxtAreaClient.positionCaret(sendTxtAreaClient.getText().length());
+            });
+            emojiContainer.getChildren().add(emojiLabel);
+        }
     }
 
     private void displayAnimalEmojis() {
@@ -252,18 +276,7 @@ public class Client1FormController implements Initializable {
                 "\uD83D\uDC7C", "\uD83D\uDC7D", "\uD83D\uDC7E", "\uD83D\uDC7F"
         };
 
-        for (String emoji : emojis) {
-            Label emojiLabel = new Label();
-            emojiLabel.setText(emoji);
-            emojiLabel.setStyle("-fx-font-size: 30");
-            emojiLabel.setOnMouseClicked(event -> {
-                String unicode = emoji;
-                sendTxtAreaClient.appendText(unicode);
-                sendTxtAreaClient.requestFocus();
-                sendTxtAreaClient.positionCaret(sendTxtAreaClient.getText().length());
-            });
-            emojiContainer.getChildren().add(emojiLabel);
-        }
+        addEmojisToContainer(emojis);
     }
 
     private void changeColorOfEmojiCategories() {
@@ -297,19 +310,7 @@ public class Client1FormController implements Initializable {
                 "\uD83D\uDE4A", "\uD83D\uDE4B", "\uD83D\uDE4C", "\uD83D\uDE4D", "\uD83D\uDE4E",
                 "\uD83D\uDE4F",
         };
-
-        for (String emoji : emojis) {
-            Label emojiLabel = new Label();
-            emojiLabel.setText(emoji);
-            emojiLabel.setStyle("-fx-font-size: 30");
-            emojiLabel.setOnMouseClicked(event -> {
-                String unicode = emoji;
-                sendTxtAreaClient.appendText(emoji);
-                sendTxtAreaClient.requestFocus();
-                sendTxtAreaClient.positionCaret(sendTxtAreaClient.getText().length());
-            });
-            emojiContainer.getChildren().add(emojiLabel);
-        }
+        addEmojisToContainer(emojis);
     }
 
     @FXML
