@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc956d8-5222-4ebd-874e-fc2dc2381401" name="Changes" comment="created client1 chat application">
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/java/lk/ijse/Client2FormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/java/lk/ijse/Client2_Initializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/java/lk/ijse/Client2_InitializerWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/Client2ChatForm.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/icons/icons8-camera-32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/icons/icons8-emoji-24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/icons/icons8-glyph-96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Group-Chat1/Client-2/src/main/resources/View/icons/icons8-send-26.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Group-Chat1/Client-1/src/main/resources/View/Client1ChatForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Group-Chat1/Client-1/src/main/resources/View/Client1ChatForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Group-Chat1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Group-Chat1/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="acc956d8-5222-4ebd-874e-fc2dc2381401" name="Changes" comment="created client2 chat application" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,11 +147,28 @@
       <option name="project" value="LOCAL" />
       <updated>1706510443319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created client2 chat application">
+      <option name="closed" value="true" />
+      <created>1706514723990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706514723990</updated>
+    </task>
+    <task id="LOCAL-00003" summary="created client2 chat application">
+      <option name="closed" value="true" />
+      <created>1706514749758</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706514749758</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created client1 chat application" />
-    <option name="LAST_COMMIT_MESSAGE" value="created client1 chat application" />
+    <MESSAGE value="created client2 chat application" />
+    <option name="LAST_COMMIT_MESSAGE" value="created client2 chat application" />
   </component>
 </project>
