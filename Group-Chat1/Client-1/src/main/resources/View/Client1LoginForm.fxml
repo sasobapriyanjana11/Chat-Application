@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="LoginPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.LoginForm">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@Images/maple.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="230.0" layoutY="70.0" prefHeight="42.0" prefWidth="115.0" text="    Login" textFill="#51948d">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="120.0" layoutY="179.0" onAction="#txtUserNameOnAction" prefHeight="42.0" prefWidth="360.0" promptText="    user Name" />
+      <JFXButton fx:id="btnJoin" buttonType="RAISED" layoutX="224.0" layoutY="256.0" onAction="#btnJoinOnAction" prefHeight="42.0" prefWidth="141.0" style="-fx-background-color: blue;" text="Join" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

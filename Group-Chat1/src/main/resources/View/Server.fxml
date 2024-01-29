@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="paneServer" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ServerController">
+   <children>
+      <Label layoutX="248.0" layoutY="23.0" prefHeight="39.0" prefWidth="105.0" text="Server" textFill="#52abb2">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtAreaServer" layoutX="36.0" layoutY="76.0" prefHeight="226.0" prefWidth="529.0" style="-fx-background-color: blue;" />
+      <TextField fx:id="txtServer" layoutX="36.0" layoutY="323.0" onAction="#txtServerOnAction" prefHeight="39.0" prefWidth="392.0" style="-fx-background-color: grey;" />
+      <JFXButton fx:id="btnSend" buttonType="RAISED" layoutX="446.0" layoutY="323.0" onAction="#btnSendOnAction" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: lightBlue;" text="Send" />
+   </children>
+</AnchorPane>

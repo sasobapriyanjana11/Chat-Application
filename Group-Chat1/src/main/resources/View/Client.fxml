@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneClient" prefHeight="542.0" prefWidth="561.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ClientController">
+   <children>
+      <Label fx:id="lblClient" layoutX="83.0" layoutY="15.0" prefHeight="34.0" prefWidth="158.0" text="      Client" textFill="#548383">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtclient" layoutX="10.0" layoutY="468.0" onAction="#txtclientOnAction" prefHeight="44.0" prefWidth="462.0" promptText=" Message" style="-fx-background-color: grey;" />
+      <JFXButton fx:id="btnSend" buttonType="RAISED" layoutX="481.0" layoutY="468.0" onAction="#btnSendOnAction" prefHeight="44.0" prefWidth="64.0" style="-fx-background-color: blue;" text="       " textFill="WHITE" />
+      <ScrollPane layoutY="63.0" prefHeight="394.0" prefWidth="561.0">
+         <content>
+            <VBox fx:id="idVBox" prefHeight="393.0" prefWidth="559.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="16.0" layoutY="8.0">
+         <image>
+            <Image url="@../icons/icons8-glyph-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconEmoji" layoutX="393.0" layoutY="478.0">
+         <image>
+            <Image url="@../icons/icons8-emoji-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconCamera" layoutX="432.0" layoutY="474.0">
+         <image>
+            <Image url="@../icons/icons8-camera-32.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="500.0" layoutY="477.0">
+         <image>
+            <Image url="@../icons/icons8-send-26.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
